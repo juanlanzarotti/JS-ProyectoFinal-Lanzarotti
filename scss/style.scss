@@ -1,0 +1,21 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+//import
+
+@import "html/contacto";
+@import "html/home";
+@import "html/productos";
+@import "html/sobre-nosotros";
+@import "html/ubicacion";
+@import "html/carrito";
+
+//como se puede ver, hice uso de Mixin, extend, variables, grid, flex, mediaquery, etc

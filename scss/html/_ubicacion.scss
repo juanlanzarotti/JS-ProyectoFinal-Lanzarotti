@@ -1,0 +1,18 @@
+
+@import '../utilidades/mixin';
+
+.ubicacion-page {
+    .tienda {
+      @include flex(column, center, center);
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      h2 { margin: 0; font-size: 18px; margin-bottom: 10px; }
+      iframe { width: 100%; height: 200px; border: 0; border-radius: 8px; }
+      &:hover { transform: translateY(-5px); transition: transform 0.3s ease; }
+    }
+    @media (max-width: 767px) { .mobile-hide { display: none; } }
+  }
+  
+  //aca uso mediaquery simplemente para mobile, ya que tablet y desktop quiero que se vean las 4 ubicaciones. Si bien en tablet podria ocultar alguna, creo que se ve bien mostrando las 4

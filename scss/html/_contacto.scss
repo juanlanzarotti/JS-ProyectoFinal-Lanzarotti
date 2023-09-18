@@ -1,0 +1,83 @@
+@import '../utilidades/variables';
+@import '../utilidades/extend';
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: $main-margin-left;
+}
+
+.contact-form {
+  @extend %container;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+
+  fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: $form-margin-bottom;
+
+    legend {
+      font-size: $form-legend-font-size;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin-top: 20px;
+    }
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: $form-margin-bottom;
+
+    label {
+      display: block;
+      font-size: $form-label-font-size;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: $form-input-padding;
+      border: $form-input-border;
+      border-radius: $form-input-border-radius;
+      font-size: $form-input-font-size;
+    }
+  }
+
+  .form-buttons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-top: $form-buttons-margin-top;
+    margin-bottom: $form-buttons-margin-bottom;
+
+    input[type="submit"],
+    input[type="reset"] {
+      padding: $form-button-padding;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-left: 10px;
+
+      &:last-child {
+        background-color: #f44336;
+      }
+    }
+  }
+
+  textarea {
+    border: $form-input-border;
+  }
+}
+  
+  

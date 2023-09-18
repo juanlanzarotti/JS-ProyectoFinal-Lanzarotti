@@ -1,0 +1,53 @@
+@import '../utilidades/variables';
+
+.container {
+max-width: $max-width-container;
+margin: 0 auto;
+padding: $padding-container;
+}
+
+.conocenos { text-align: center; margin-bottom: 40px; }
+.about, .team { margin-bottom: 40px; }
+
+.card-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+justify-items: center;
+}
+
+.card {
+  transition: transform 0.3s, box-shadow 0.3s; // Agrego una transición suave al movimiento y sombra
+  border: none;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-5px); // Mueve la tarjeta hacia arriba 5px
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Agrega una sombra leve
+  }
+}
+
+.card-img-top {
+width: 100%;
+height: auto;
+object-fit: cover;
+}
+
+.card-body { padding: 20px; }
+
+.card-title {
+font-size: 1.2rem;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.card-text { font-size: 1rem; }
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  

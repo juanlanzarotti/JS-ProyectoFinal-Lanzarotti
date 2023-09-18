@@ -1,0 +1,76 @@
+/* Estilos para el carrito de compras */
+.carrito {
+    padding: 50px 0;
+  
+    h1 {
+      margin-bottom: 20px;
+    }
+  
+    .carrito-producto {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      padding: 20px 0;
+  
+      .producto-imagen {
+        max-width: 80px;
+        margin-right: 20px;
+      }
+  
+      .producto-info {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+  
+        .producto-nombre {
+          font-size: 18px;
+          margin-bottom: 5px;
+        }
+  
+        .producto-precio {
+          font-size: 16px;
+          color: #007bff;
+        }
+      }
+  
+      .btn-remove {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #c82333;
+        }
+      }
+    }
+  
+    #limpiarCarrito {
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      float: right;
+      margin-top: 20px;
+  
+      &:hover {
+        background-color: #c82333;
+      }
+    }
+  }
+
+  /* Cambia el color del enlace */
+a.btn-link {
+    color: black; /* Cambia el color a negro o el que desees */
+    text-decoration: none; /* Quita la subraya */
+  }
+  
+  /* Cambia el color del enlace cuando se pasa el mouse por encima */
+  a.btn-link:hover {
+    color: #333; /* Cambia el color a un tono más oscuro */
+  }
+  
+  
+  

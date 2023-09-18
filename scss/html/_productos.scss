@@ -1,0 +1,38 @@
+@import '../utilidades/variables';
+
+.products {
+    padding: 50px 0;
+    
+    h2 { font-size: 24px; color: $color-primario; margin-bottom: 20px; }
+    
+    .card {
+      margin-bottom: 20px;
+      .card-img-top { max-height: 200px; object-fit: cover; }
+      .card-title { font-size: 20px; color: $color-primario; margin-bottom: 10px; }
+      .card-text { font-size: 16px; color: $color-secundario; }
+      
+      &:hover { transform: translateY(-5px); transition: transform 0.3s ease; }
+    }
+  }
+
+
+.hide-on-mobile {
+    @media (max-width: $mobile) {
+      display: none;
+    }
+
+  }
+  
+.hide-on-tablet {
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+  
+.hide-on-desktop {
+    @media (min-width: $desktop) {
+      display: none;
+    }
+}
+  
+
